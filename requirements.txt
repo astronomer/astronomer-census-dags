@@ -1,1 +1,2 @@
-airflow-provider-census
+airflow-provider-census==1.1.1
+apache-airflow-providers-snowflake==2.2.0
