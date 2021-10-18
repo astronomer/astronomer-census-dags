@@ -1,4 +1,4 @@
-### Sync Customer Data from a Data Warehouse to Marketing Campaign Platform with Census
+## Sync Customer Data from a Data Warehouse to Marketing Campaign Platform with Census
 
 This reverse-ETL pipeline syncs customer data from a Snowflake data warehouse to a marketing platform using
 Census for those customers who last ordered a configurable number of days before the current date. The
