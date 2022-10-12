@@ -1,3 +1,9 @@
+"""
+DAG that shows how to use Census to send emails to customers selected for reengagement.
+
+Assumes the customer data is already living in Snowflake. 
+"""
+
 from datetime import datetime, timedelta
 
 from airflow.decorators import dag
@@ -15,6 +21,7 @@ from airflow_provider_census.sensors.census import CensusSensor
     catchup=False,
     default_args={"retries": 1, "retry_delay": timedelta(minutes=3)},
     default_view="graph",
+    doc_md=__doc__
 )
 def census_sync_for_customer_reengagement():
     begin = DummyOperator(task_id="begin")
