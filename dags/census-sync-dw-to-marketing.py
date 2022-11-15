@@ -1,5 +1,8 @@
 """
-DAG that shows how to use Census to send emails to customers selected for reengagement.
+### Send Emails with Census
+
+DAG that shows how to use Census to send emails to customers selected for reengagement. By using Census, end users can
+use their datawarehouse as the source of truth for their marketing campaigns.
 
 Assumes the customer data is already living in Snowflake. 
 """
